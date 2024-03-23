@@ -1,6 +1,6 @@
 # Gのちょこっとラスター
 
-[![Witches](http://img.youtube.com/vi/0aEE57ZdOq8/0.jpg)](https://www.youtube.com/watch?v=0aEE57ZdOq8)
+[![Gのちょこっとラスター](http://img.youtube.com/vi/0aEE57ZdOq8/0.jpg)](https://www.youtube.com/watch?v=0aEE57ZdOq8)
 
 ## 説明
 大地に立ってください。<br>
