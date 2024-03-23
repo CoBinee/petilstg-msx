@@ -1,0 +1,29 @@
+crt0.rel    :   crt0.s
+main.rel    :   main.s \
+                bios.inc System.inc
+System.rel  :   System.s System.inc \
+                bios.inc vdp.inc
+App.rel     :   App.s App.inc \
+                bios.inc vdp.inc System.inc Game.inc
+Game.rel    :   Game.s Game.inc \
+                bios.inc vdp.inc System.inc App.inc Unit.inc Enemy.inc Player.inc Eshot.inc Pshot.inc Cockpit.inc Star.inc Text.inc Demo.inc
+Unit.rel    :   Unit.s Unit.inc \
+                bios.inc vdp.inc System.inc App.inc Game.inc
+Enemy.rel   :   Enemy.s Enemy.inc \
+                bios.inc vdp.inc System.inc App.inc Game.inc Unit.inc
+Player.rel  :   Player.s Player.inc \
+                bios.inc vdp.inc System.inc App.inc Game.inc
+Eshot.rel   :   Eshot.s Eshot.inc \
+                bios.inc vdp.inc System.inc App.inc Game.inc Unit.inc Enemy.inc Player.inc
+Pshot.rel   :   Pshot.s Pshot.inc \
+                bios.inc vdp.inc System.inc App.inc Game.inc Unit.inc Enemy.inc
+Cockpit.rel :   Cockpit.s Cockpit.inc \
+                bios.inc vdp.inc System.inc App.inc Game.inc Player.inc
+Star.rel    :   Star.s Star.inc \
+                bios.inc vdp.inc System.inc App.inc Game.inc
+Text.rel    :   Text.s Text.inc \
+                bios.inc vdp.inc System.inc App.inc Game.inc
+Demo.rel    :   Demo.s Demo.inc \
+                bios.inc vdp.inc System.inc App.inc Game.inc Text.inc
+sprite.rel  :   sprite.s
+pattern.rel :   pattern.s
